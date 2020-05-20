@@ -12,11 +12,15 @@ function compare($a,$b){
 usort($filenames,'compare');
 ?>
 <style>
-* { margin: 0;padding:0}
 li { list-style : none;}
-img { opacity: 0.8}
-img:hover { opacity: 1}
+img { opacity: 0.5}
+img:hover { opacity: 1; border: 10px solid lightblue}
 </style>
-<?php foreach($filenames as $filename) { ?>
-    <li><a target="_blank" href="<?php echo $filename ?>" ><img src="<?php echo $filename ?>" /></a>
+<h1>おれのGyazo</h1>
+<?php foreach($filenames as $f) { ?>
+<li>
+    <a target="_blank" href="<?php echo $f ?>" >
+      <img src="<?php echo $f ?>" title="<?php echo $f?>" />
+    </a>
 <?php } ?>
+
