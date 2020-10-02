@@ -15,6 +15,7 @@ usort($filenames,'compare');
 li { list-style : none;}
 img { opacity: 0.5}
 img:hover { opacity: 1; border: 10px solid lightblue}
+img { border: 10px solid #ffffff }
 </style>
 <h1>おれのGyazo</h1>
 <?php foreach($filenames as $f) { ?>
